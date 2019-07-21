@@ -13,7 +13,7 @@ app.locals = {
 }
 
 app.use(cors({
-  allowedOrigins: ['localhost:3000']
+  allowedOrigins: ['localhost:3001']
 }));
 
 app.use(bodyParser.urlencoded({ extended: true }));
