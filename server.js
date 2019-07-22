@@ -36,7 +36,9 @@ app.post('/api/v1/users', (req, res) => {
 
   app.locals.users = [...app.locals.users, { ...newUser, status: false }];
 
-  return res.status(201).json({id: newUser.id});
+  const { id, name, status, interests } = newUser;
+
+  return res.status(201).json({ id, name, status, interests });
 });
 
 app.delete('/api/v1/users/:id', (req, res) => {
@@ -53,7 +55,7 @@ app.delete('/api/v1/users/:id', (req, res) => {
 
   app.locals.users = filteredUsers;
 
-  return res.sendStatus(204);
+  return res.sendStatus(202).json(app.locals.users);
 });
 
 app.get('/api/v1/sport-teams', (req, res) => {
@@ -73,7 +75,9 @@ app.post('/api/v1/sport-teams', (req, res) => {
 
   app.locals.sportTeams = [...app.locals.sportTeams, { ...newSportTeam, status: false }];
 
-  return res.status(201).json({id: newSportTeam.id});
+  const { id, name, head_coach, sport } = newSportTeam;
+
+  return res.status(201).json({ id, name, head_coach, sport });
 });
 
 app.delete('/api/v1/sport-teams/:id', (req, res) => {
@@ -90,7 +94,7 @@ app.delete('/api/v1/sport-teams/:id', (req, res) => {
 
   app.locals.sportTeams = filteredSportTeams;
 
-  return res.sendStatus(204);
+  return res.sendStatus(202).json(app.locals.sportTeams);
 });
 
 app.get('/api/v1/animals', (req, res) => {
@@ -110,7 +114,9 @@ app.post('/api/v1/animals', (req, res) => {
 
   app.locals.animals = [...app.locals.animals, { ...newAnimal, status: false }];
 
-  return res.status(201).json({id: newAnimal.id});
+  const { id, name, diet, fun_fact } = newAnimal;
+
+  return res.status(201).json({ id, name, diet, fun_fact });
 });
 
 app.delete('/api/v1/animals/:id', (req, res) => {
@@ -127,7 +133,7 @@ app.delete('/api/v1/animals/:id', (req, res) => {
 
   app.locals.animals = filteredAnimals;
 
-  return res.sendStatus(204);
+  return res.sendStatus(202).json(app.locals.animals);
 });
 
 app.listen(port, () => {

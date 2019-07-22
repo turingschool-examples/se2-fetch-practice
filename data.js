@@ -56,7 +56,7 @@ module.exports = {
       id: 1,
       name: 'otters',
       diet: 'urchins, snails, fish & crabs',
-      fun_fact: 'They have the thickest fur of any mammal in the animal kingdom..'
+      fun_fact: 'They have the thickest fur of any mammal in the animal kingdom.'
     },
     {
       id: 2,
@@ -67,7 +67,7 @@ module.exports = {
     {
       id: 3,
       name: 'orcas',
-      diet: 'ea birds, squid, octopuses, sea turtles, sharks, rays & fish',
+      diet: 'birds, squid, octopuses, sea turtles, sharks, rays & fish',
       fun_fact: 'Orcas, also known as killer whales, are known to prey on other marine mammals, including dolphins and seals.'
     },
     {
