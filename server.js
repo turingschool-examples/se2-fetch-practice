@@ -34,9 +34,9 @@ app.post('/api/v1/users', (req, res) => {
     }
   }
 
-  app.locals.users = [...app.locals.users, { ...newUser, status: false }];
-
   const { id, name, status, interests } = newUser;
+
+  app.locals.users = [...app.locals.users, { id, name, status, interests }];
 
   return res.status(201).json({ id, name, status, interests });
 });
@@ -55,11 +55,11 @@ app.delete('/api/v1/users/:id', (req, res) => {
 
   app.locals.users = filteredUsers;
 
-  return res.sendStatus(202).json(app.locals.users);
+  return res.status(202).json(app.locals.users);
 });
 
 app.get('/api/v1/sport-teams', (req, res) => {
-  res.status(200).json(app.locals.users);
+  res.status(200).json(app.locals.sportTeams);
 });
 
 app.post('/api/v1/sport-teams', (req, res) => {
@@ -73,9 +73,9 @@ app.post('/api/v1/sport-teams', (req, res) => {
     }
   }
 
-  app.locals.sportTeams = [...app.locals.sportTeams, { ...newSportTeam, status: false }];
-
   const { id, name, head_coach, sport } = newSportTeam;
+
+  app.locals.sportTeams = [...app.locals.sportTeams, { id, name, head_coach, sport }];
 
   return res.status(201).json({ id, name, head_coach, sport });
 });
@@ -94,11 +94,11 @@ app.delete('/api/v1/sport-teams/:id', (req, res) => {
 
   app.locals.sportTeams = filteredSportTeams;
 
-  return res.sendStatus(202).json(app.locals.sportTeams);
+  return res.status(202).send(app.locals.sportTeams);
 });
 
 app.get('/api/v1/animals', (req, res) => {
-  res.status(200).json(app.locals.users);
+  res.status(200).json(app.locals.animals);
 });
 
 app.post('/api/v1/animals', (req, res) => {
@@ -112,9 +112,9 @@ app.post('/api/v1/animals', (req, res) => {
     }
   }
 
-  app.locals.animals = [...app.locals.animals, { ...newAnimal, status: false }];
-
   const { id, name, diet, fun_fact } = newAnimal;
+
+  app.locals.animals = [...app.locals.animals, { id, name, diet, fun_fact }];
 
   return res.status(201).json({ id, name, diet, fun_fact });
 });
@@ -133,7 +133,7 @@ app.delete('/api/v1/animals/:id', (req, res) => {
 
   app.locals.animals = filteredAnimals;
 
-  return res.sendStatus(202).json(app.locals.animals);
+  return res.status(202).json(app.locals.animals);
 });
 
 app.listen(port, () => {
