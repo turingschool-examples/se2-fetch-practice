@@ -55,7 +55,7 @@ app.delete('/api/v1/users/:id', (req, res) => {
 
   app.locals.users = filteredUsers;
 
-  return res.status(202).json(app.locals.users);
+  return res.status(200).json(app.locals.users);
 });
 
 app.get('/api/v1/sport-teams', (req, res) => {
@@ -94,7 +94,7 @@ app.delete('/api/v1/sport-teams/:id', (req, res) => {
 
   app.locals.sportTeams = filteredSportTeams;
 
-  return res.status(202).send(app.locals.sportTeams);
+  return res.status(200).send(app.locals.sportTeams);
 });
 
 app.get('/api/v1/animals', (req, res) => {
@@ -133,10 +133,10 @@ app.delete('/api/v1/animals/:id', (req, res) => {
 
   app.locals.animals = filteredAnimals;
 
-  return res.status(202).json(app.locals.animals);
+  return res.status(200).json(app.locals.animals);
 });
 
 app.listen(port, () => {
-  console.log(`${app.locals.title} is now running on ${port}!`)
+  console.log(`${app.locals.title} is now running on http://localhost:${port} !`)
 });
 
