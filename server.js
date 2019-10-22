@@ -8,6 +8,7 @@ const { users, sportTeams, animals } = require('./data.js');
 app.locals = {
   title: 'Network Request Practice',
   users,
+  sportTeams,
   animals
 }
 
@@ -138,3 +139,4 @@ app.delete('/api/v1/animals/:id', (req, res) => {
 app.listen(port, () => {
   console.log(`${app.locals.title} is now running on http://localhost:${port} !`)
 });
+
