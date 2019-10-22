@@ -12,9 +12,7 @@ app.locals = {
   animals
 }
 
-app.use(cors({
-  allowedOrigins: ['localhost:3000']
-}));
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
