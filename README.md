@@ -8,7 +8,8 @@ This repo is meant to be used with the <a href="https://frontend.turing.io/lesso
 2. cd into the cloned repo
 3. run `npm install`
 4. run `npm start`. The server should be running locally on port 3001
-5. Open a new <a href="repl.it" target="\__blank">`HTML5` Repl</a>
+5. Navigate to the endpoint you're trying to request in the browser
+6. Practice making your network requests!
 
 
 ## Making the requests
@@ -18,7 +19,7 @@ In the repl, use the following endpoints to:
 - GET all users
 - POST a new user (you can verify this worked with another GET request)
 - GET all animals
-- POST a new animal 
+- POST a new animal
 
 ### User Endpoints
 
