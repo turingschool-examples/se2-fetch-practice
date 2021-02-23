@@ -1,6 +1,6 @@
 # Fetch Practice
 
-This repo is meant to be used with the <a href="https://frontend.turing.io/lessons/module-2/intro-network-requests.html" target="\__blank"> Mod 2 Network Request</a> lesson plan.
+This repo is meant to be used with the <a href="https://frontend.turing.io/lessons/module-2/network-requests-gets-and-posts.html" target="\__blank"> Mod 2 Network Request</a> lesson plan.
 
 ## Backend Installation / Set up
 
