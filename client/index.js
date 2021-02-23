@@ -1,15 +1,26 @@
 console.log('so fetch!')
 
 // Pick between 1 of the resources available in the api (users, animals, or sports teams), and do the following:
+const animalsSection = document.querySelector('.js-collection');
+const addAnimalsToPage = animals => {
+  animals.forEach(animal => {
+    addAnimalToPage(animal);
+  })
+}
+
+const addAnimalToPage = animal => {
+  animalsSection.innerHTML += `<p>${animal.name}</p>`
+}
 // 1. Make a get request to get all of the items for a given resource, and log those items to the console.
 const animalsUrl = 'http://localhost:3001/api/v1/animals';
 const getAllAnimals = () => {
   fetch(animalsUrl)
   .then(response => response.json())
-  .then(data => {
-    console.log(data)
-  })
+  .then(animals => {
+    addAnimalsToPage(animals)
+  });
 }
+
 getAllAnimals();
 // 2. Make a post request to create a new instance of that resource, and log the result to the console.
 const addAnimal = () => {
@@ -25,11 +36,12 @@ const addAnimal = () => {
     body: JSON.stringify(newAnimal)
   })
   .then(response => response.json())
-  .then(json => console.log(json))
+  .then(animal => {
+    addAnimalToPage(animal);
+  });
 }
 
 addAnimal();
-// 3. Make another get request to get the updated data set, and log the result to the console.
 
 // Hook it up to the dom!
 // 4. On page load, fire off #1 from above and populate the section.js-collection with those items
