@@ -2,7 +2,7 @@
 
 This repo is meant to be used with the <a href="https://frontend.turing.io/lessons/module-2/intro-network-requests.html" target="\__blank"> Mod 2 Network Request</a> lesson plan.
 
-## Installation / Set up
+## Backend Installation / Set up
 
 1. `git clone` the repo
 2. cd into the cloned repo
@@ -12,14 +12,28 @@ This repo is meant to be used with the <a href="https://frontend.turing.io/lesso
 6. Practice making your network requests in the console or a Repl!
 
 
-## Making the requests
+## Frontend Setup
 
-In the console, use the following endpoints to:
+In the `client` directory, there are some files we can use as a makeshift client.
+
+1. run `open client/index.html` from your command line
+2. open your console, so that you can check your fetch requests using either `debugger` or `console.log()` ("so fetch!" should be showing up in your console on page load.)
+3. follow the directions in `client/index.js` to practice fetching! (feel free to get rid of the gif if it's too distracting)
+
+## Your challenge
+
+Follow the directions that are commented out in `client/index.js`.
+
+## Endpoints
+
+The following endpoints are documented below:
 
 - GET all users
 - POST a new user (you can verify this worked with another GET request)
 - GET all animals
 - POST a new animal
+- GET all sports teams
+- POST a new sports team
 
 ### User Endpoints
 
