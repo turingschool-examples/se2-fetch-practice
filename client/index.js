@@ -1,23 +1,10 @@
-const addAnimalsToPage = animals => {
-  animals.forEach(animal => {
-    addAnimalToPage(animal);
-  });
-}
 
-const addAnimalToPage = animal => {
-  const animalsSection = document.querySelector('.js-collection');
-  animalsSection.innerHTML += `<p>${animal.name}</p>`;
-}
-
-// 1. Make a get request to get all of the items for a given resource, and log those items to the console.
-const animalsUrl = 'http://localhost:3001/api/v1/animals';
 const getAllAnimals = () => {
   fetch(animalsUrl)
   .then(response => response.json())
   .then(animals => addAnimalsToPage(animals));
 }
 
-// 2. Make a post request to create a new instance of that resource, and log the result to the console.
 const addAnimal = (newAnimal) => {
   fetch(animalsUrl, {
     method: 'POST',
@@ -28,21 +15,30 @@ const addAnimal = (newAnimal) => {
   .then(animal => addAnimalToPage(animal));
 }
 
-// Hook it up to the dom!
-// 4. On page load, fire off #1 from above and populate the section.js-collection with those items
+const animalsSection = document.querySelector('.js-animals');
+const animalsUrl = 'http://localhost:3001/api/v1/animals';
 getAllAnimals();
 
-// 5. Add an event listener, so that when you click button.js-add-item, it will make a fetch request to post that item to the server
-document.querySelector('.js-add-item').addEventListener('click', () => {
+
+const addAnimalsToPage = animals => {
+  animals.forEach(animal => {
+    addAnimalToPage(animal);
+  });
+}
+
+const addAnimalToPage = animal => {
+  animalsSection.innerHTML += `<p>${animal.name}</p>`;
+}
+
+document.querySelector('.js-add-animal').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
   const newAnimal = {
-    id: 55,
-    name: 'coleslaw',
-    diet: 'burritos',
-    fun_fact: 'loves ramen as well'
+    id: animalsSection.childElementCount + 1,
+    name: formData.get('name'),
+    diet: formData.get('diet'),
+    fun_fact: formData.get('fun_fact')
   };
   addAnimal(newAnimal);
+  e.target.reset();
 });
-
-// EXTRA CREDIT:
-// Create a form and event listener so that the user can add an item of their choosing
-// Handle the use case where a 422 is given back from the server
