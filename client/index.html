@@ -8,11 +8,12 @@
   <body>
     <main>
       <form class="js-add-animal">
-        <input placeholder="name" name="name" />
-        <input placeholder="diet" name="diet" />
-        <input placeholder="fun fact" name="fun_fact" />
+        <input placeholder="name" name="name" required />
+        <input placeholder="diet" name="diet" required />
+        <input placeholder="fun fact" name="fun_fact" required />
         <input type="submit" value="Add Animal!">
       </form>
+      <p class="js-error"></p>
       <section class="js-animals"></section>
     </main>
     <script src="index.js"></script>
