@@ -43,9 +43,9 @@ The following endpoints are documented below:
 
 | url       | verb | options | sample response |
 | ----------|------|---------|---------------- |
-| `http://localhost:3001/api/v1/users`  
+| `http://localhost:3001/api/v1/users`  | GET | not needed | Array of all existing users: `[{ id: 1, name: 'Travis Rollins', status: 'online', interests: 'Music, Software, & Gaming' }]` |
 | `https://fe2-fetch-practice.herokuapp.com/api/v1/users`| GET | not needed | Array of all existing users: `[{ id: 1, name: 'Travis Rollins', status: 'online', interests: 'Music, Software, & Gaming' }]` |
-| `http://localhost:3001/api/v1/users`
+| `http://localhost:3001/api/v1/users`| POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | New user: `{ id: 1, name: 'Leta', status: 'online', interests: 'Science, Music, & Classic Films' }` |
 | `https://fe2-fetch-practice.herokuapp.com/api/v1/users`| POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | New user: `{ id: 1, name: 'Leta', status: 'online', interests: 'Science, Music, & Classic Films' }` |
 
 
@@ -53,16 +53,16 @@ The following endpoints are documented below:
 
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
-| `http://localhost:3001/api/v1/animals`
+| `http://localhost:3001/api/v1/animals`| GET | not needed | Array of all existing animals: `[{ id: 3, name: 'orcas', diet: 'birds, squid, octopuses, sea turtles, sharks, rays & fish', fun_fact: 'Orcas, also known as killer whales, are known to prey on other marine mammals, including dolphins and seals.' }]` |
 | `https://fe2-fetch-practice.herokuapp.com/api/v1/animals`| GET | not needed | Array of all existing animals: `[{ id: 3, name: 'orcas', diet: 'birds, squid, octopuses, sea turtles, sharks, rays & fish', fun_fact: 'Orcas, also known as killer whales, are known to prey on other marine mammals, including dolphins and seals.' }]` |
-| `http://localhost:3001/api/v1/animals`
+| `http://localhost:3001/api/v1/animals`| POST | `{ id: <Number>, name: <String>, diet: <String>, fun_fact: <String> }` | New animal: `{ id: 4, name: 'tigers', diet: 'chital, sambar, gaur & wild board', fun_fact: 'The main food of tigers are buffalos, antelopes, and rodents.' }` |
 | `https://fe2-fetch-practice.herokuapp.com/api/v1/animals`| POST | `{ id: <Number>, name: <String>, diet: <String>, fun_fact: <String> }` | New animal: `{ id: 4, name: 'tigers', diet: 'chital, sambar, gaur & wild board', fun_fact: 'The main food of tigers are buffalos, antelopes, and rodents.' }` |
 
 #### Sport Team Endpoints
 
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
-| `http://localhost:3001/api/v1/sport-teams` 
+| `http://localhost:3001/api/v1/sport-teams` | GET | not needed | Array of all existing sport teams: `[{ id: 1, name: 'Dallas Cowboys', head_coach: 'Jason Garrett', sport: 'football' }]` |
 | `https://fe2-fetch-practice.herokuapp.com/api/v1/sport-teams`| GET | not needed | Array of all existing sport teams: `[{ id: 1, name: 'Dallas Cowboys', head_coach: 'Jason Garrett', sport: 'football' }]` |
-| `http://localhost:3001/api/v1/sport-teams` 
+| `http://localhost:3001/api/v1/sport-teams` | POST | `{ id: <Number>, name: <String>, head_coach: <String>, sport: <String> }` | New sport team: `{ id: 2, name: 'New York Yankees', head_coach: 'Aaron Boone', sport: 'baseball' },` |
 | `https://fe2-fetch-practice.herokuapp.com/api/v1/sport-teams`| POST | `{ id: <Number>, name: <String>, head_coach: <String>, sport: <String> }` | New sport team: `{ id: 2, name: 'New York Yankees', head_coach: 'Aaron Boone', sport: 'baseball' },` |
