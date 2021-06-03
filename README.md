@@ -10,6 +10,7 @@
 5. run `npm install`
 6. run `npm start`. The server should be running locally on port 3001
 7. Navigate to the endpoint you're trying to request in the browser (ie if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
+8. The server is also deployed here https://fe2-fetch-practice.herokuapp.com/ 
 
 
 ## Frontend Setup
@@ -40,22 +41,28 @@ The following endpoints are documented below:
 
 ### User Endpoints
 
-| url | verb | options | sample response |
-| ----|------|---------|---------------- |
-| `http://localhost:3001/api/v1/users` | GET | not needed | Array of all existing users: `[{ id: 1, name: 'Travis Rollins', status: 'online', interests: 'Music, Software, & Gaming' }]` |
-| `http://localhost:3001/api/v1/users` | POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | New user: `{ id: 1, name: 'Leta', status: 'online', interests: 'Science, Music, & Classic Films' }` |
+| url       | verb | options | sample response |
+| ----------|------|---------|---------------- |
+| `http://localhost:3001/api/v1/users`  
+| `https://fe2-fetch-practice.herokuapp.com/api/v1/users`| GET | not needed | Array of all existing users: `[{ id: 1, name: 'Travis Rollins', status: 'online', interests: 'Music, Software, & Gaming' }]` |
+| `http://localhost:3001/api/v1/users`
+| `https://fe2-fetch-practice.herokuapp.com/api/v1/users`| POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | New user: `{ id: 1, name: 'Leta', status: 'online', interests: 'Science, Music, & Classic Films' }` |
 
 
 ### Animal Endpoints
 
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
-| `http://localhost:3001/api/v1/animals` | GET | not needed | Array of all existing animals: `[{ id: 3, name: 'orcas', diet: 'birds, squid, octopuses, sea turtles, sharks, rays & fish', fun_fact: 'Orcas, also known as killer whales, are known to prey on other marine mammals, including dolphins and seals.' }]` |
-| `http://localhost:3001/api/v1/animals` | POST | `{ id: <Number>, name: <String>, diet: <String>, fun_fact: <String> }` | New animal: `{ id: 4, name: 'tigers', diet: 'chital, sambar, gaur & wild board', fun_fact: 'The main food of tigers are buffalos, antelopes, and rodents.' }` |
+| `http://localhost:3001/api/v1/animals`
+| `https://fe2-fetch-practice.herokuapp.com/api/v1/animals`| GET | not needed | Array of all existing animals: `[{ id: 3, name: 'orcas', diet: 'birds, squid, octopuses, sea turtles, sharks, rays & fish', fun_fact: 'Orcas, also known as killer whales, are known to prey on other marine mammals, including dolphins and seals.' }]` |
+| `http://localhost:3001/api/v1/animals`
+| `https://fe2-fetch-practice.herokuapp.com/api/v1/animals`| POST | `{ id: <Number>, name: <String>, diet: <String>, fun_fact: <String> }` | New animal: `{ id: 4, name: 'tigers', diet: 'chital, sambar, gaur & wild board', fun_fact: 'The main food of tigers are buffalos, antelopes, and rodents.' }` |
 
 #### Sport Team Endpoints
 
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
-| `http://localhost:3001/api/v1/sport-teams` | GET | not needed | Array of all existing sport teams: `[{ id: 1, name: 'Dallas Cowboys', head_coach: 'Jason Garrett', sport: 'football' }]` |
-| `http://localhost:3001/api/v1/sport-teams` | POST | `{ id: <Number>, name: <String>, head_coach: <String>, sport: <String> }` | New sport team: `{ id: 2, name: 'New York Yankees', head_coach: 'Aaron Boone', sport: 'baseball' },` |
+| `http://localhost:3001/api/v1/sport-teams` 
+| `https://fe2-fetch-practice.herokuapp.com/api/v1/sport-teams`| GET | not needed | Array of all existing sport teams: `[{ id: 1, name: 'Dallas Cowboys', head_coach: 'Jason Garrett', sport: 'football' }]` |
+| `http://localhost:3001/api/v1/sport-teams` 
+| `https://fe2-fetch-practice.herokuapp.com/api/v1/sport-teams`| POST | `{ id: <Number>, name: <String>, head_coach: <String>, sport: <String> }` | New sport team: `{ id: 2, name: 'New York Yankees', head_coach: 'Aaron Boone', sport: 'baseball' },` |
