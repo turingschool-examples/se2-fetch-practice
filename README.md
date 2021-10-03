@@ -1,39 +1,34 @@
 # Fetch Practice
 
-This repo is meant to be used with the <a href="https://frontend.turing.io/lessons/module-2/network-requests-gets-and-posts.html" target="\__blank"> Mod 2 Network Request</a> lesson plan.
+This repo provides a backend server to practice with GET and POST requests.
 
-## Backend Installation / Set up
+## Backend Setup
 
-1. `git clone` the repo
-2. cd into the cloned repo
-3. run `npm install`
-4. run `npm start`. The server should be running locally on port 3001
-5. Navigate to the endpoint you're trying to request in the browser (ie if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
-6. Practice making your network requests in the console!
+1. Clone down this repo
+1. `cd` into the cloned repo
+1. Run `npm install`
+1. Run `npm start`. The server should be running locally on `http://localhost:3001`
+1. Navigate to the endpoint you're trying to request in the browser (for example, if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
+1. Practice making your network requests in the console!
 
+## Spicier Challenge
 
-## Frontend Setup
+After you've done some network requests in the console, continue with implementing a network requests in a small front-end application included in this repo.
+
+### Frontend Details
 
 In the `client` directory, there are some files we can use as a makeshift client.
 
-1. run `open client/index.html` from your command line
-2. open your console, so that you can check your fetch requests using either `debugger` or `console.log()` ("so fetch!" should be showing up in your console on page load.)
-3. follow the directions in `client/index.js` to practice fetching! (feel free to get rid of the gif if it's too distracting)
+1. Run `open client/index.html` from your command line to see the application in your browser
+1. follow the directions in `client/index.js` to practice fetching! (feel free to get rid of the gif if it's too distracting)
 
-## Your challenge
+### Your challenge
 
 Follow the directions that are commented out in `client/index.js`.
 
 ## Endpoints
 
 The following endpoints are documented below:
-
-- GET all users
-- POST a new user (you can verify this worked with another GET request)
-- GET all animals
-- POST a new animal
-- GET all sports teams
-- POST a new sports team
 
 ### User Endpoints
 
