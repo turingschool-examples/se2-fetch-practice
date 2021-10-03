@@ -20,11 +20,7 @@ After you've done some network requests in the console, continue with implementi
 In the `client` directory, there are some files we can use as a makeshift client.
 
 1. Run `open client/index.html` from your command line to see the application in your browser
-1. follow the directions in `client/index.js` to practice fetching! (feel free to get rid of the gif if it's too distracting)
-
-### Your challenge
-
-Follow the directions that are commented out in `client/index.js`.
+1. Follow the directions that are commented out in `client/index.js` to practice fetching!
 
 ## Endpoints
 
