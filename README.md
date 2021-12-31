@@ -1,37 +1,43 @@
+# Error HandlingPractice
 
-# Fetch Practice
+## Backend Installation / Set up
 
-This repo provides a backend server to practice with GET and POST requests.
-
-
-## Backend Setup
-
-1. Clone down this repo
-1. `cd` into the cloned repo
-1. Run `npm install`
-1. Run `npm start`. The server should be running locally on `http://localhost:3001`
-1. Navigate to the endpoint you're trying to request in the browser (for example, if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
-1. Practice making your network requests in the console!
+1. `git clone` the repo
+2. cd into the cloned repo
+3. Make sure that you're on the error handling branch
+  * `git fetch`
+  * `git checkout error-handling`
+5. run `npm install`
+6. run `npm start`. The server should be running locally on port 3001 - This is a local server
+7. Navigate to the endpoint you're trying to request in the browser (ie if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
+8. The server is also deployed here https://fe2-fetch-practice.herokuapp.com/v1/users - This is a server deployed on the browser.
 
 
-## Spicier Challenge
-
-After you've done some network requests in the console, continue with implementing a network requests in a small front-end application included in this repo.
-
-### Frontend Details
-
+## Frontend Setup
 
 In the `client` directory, there are some files we can use as a makeshift client.
 
-Finish early? Do the same thing for one of the other resources. ie. users or sports teams.
-=======
-1. Run `open client/index.html` from your command line to see the application in your browser
-1. Follow the directions that are commented out in `client/index.js` to practice fetching!
+1. run `open client/index.html` from your command line
+2. Modify the code in `client/index.js` to practice error handling!
 
+## Your challenge
+
+1. Handle the 422 error that comes back when the form is submitted with an empty field(s), and display an informative message to the user.
+2. How can you prevent the user from submitting the form with an empty field to begin with. Update the form to accomplish that.
+3. Handle the use case where something is wrong with the server. Display an informative message to the user. (You can easily test this by shutting down the api server)
+
+Finish early? Do the same thing for one of the other resources. ie. users or sports teams.
 
 ## Endpoints
 
 The following endpoints are documented below:
+
+- GET all users
+- POST a new user (you can verify this worked with another GET request)
+- GET all animals
+- POST a new animal
+- GET all sports teams
+- POST a new sports team
 
 ### User Endpoints
 
