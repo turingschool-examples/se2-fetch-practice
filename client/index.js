@@ -1,10 +1,15 @@
-
+// Animal URL 
+const animalsUrl = 'http://localhost:3001/api/v1/animals';
+// ----- Query selectors
+const animalsSection = document.querySelector('.js-animals');
+const form = document.querySelector('.js-add-animal');
+// ----- GET request 
 const getAllAnimals = () => {
   fetch(animalsUrl)
   .then(response => response.json())
   .then(animals => addAnimalsToPage(animals));
 }
-
+//----- Post request 
 const addAnimal = (newAnimal) => {
   fetch(animalsUrl, {
     method: 'POST',
@@ -15,8 +20,8 @@ const addAnimal = (newAnimal) => {
   .then(animal => addAnimalToPage(animal));
 }
 
-const animalsSection = document.querySelector('.js-animals');
-const animalsUrl = 'http://localhost:3001/api/v1/animals';
+
+
 getAllAnimals();
 
 
@@ -30,7 +35,7 @@ const addAnimalToPage = animal => {
   animalsSection.innerHTML += `<p>${animal.name}</p>`;
 }
 
-document.querySelector('.js-add-animal').addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   const newAnimal = {
