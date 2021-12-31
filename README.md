@@ -8,9 +8,9 @@
   * `git fetch`
   * `git checkout error-handling`
 5. run `npm install`
-6. run `npm start`. The server should be running locally on port 3001
+6. run `npm start`. The server should be running locally on port 3001 - This is a local server
 7. Navigate to the endpoint you're trying to request in the browser (ie if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
-8. The server is also deployed here https://fe2-fetch-practice.herokuapp.com/v1/users 
+8. The server is also deployed here https://fe2-fetch-practice.herokuapp.com/v1/users - This is a server deployed on the browser.
 
 
 ## Frontend Setup
