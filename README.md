@@ -9,7 +9,7 @@ This repo provides a backend server to practice with GET and POST requests.
 1. Run `npm install`
 1. Run `npm start`. The server should be running locally on `http://localhost:3001`
 1. Navigate to the endpoint you're trying to request in the browser (for example, if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
-1. Practice making your network requests in the console!
+1. Practice making your network requests in the console using the available endpoints below!
 
 ## Spicier Challenge
 
@@ -19,8 +19,10 @@ After you've done some network requests in the console, continue with implementi
 
 In the `client` directory, there are some files we can use as a makeshift client.
 
-1. Run `open client/index.html` from your command line to see the application in your browser
+1. Run `open client/index.html` from your command line to see the application in your browser.
 1. Follow the directions that are commented out in `client/index.js` to practice fetching!
+
+**Note:** You will need to keep your server running in a separate window under your terminal while working through these exercises.  To stop your server, hit `Ctrl + C` together.  (_Do not just close the window, this will not stop the server!_)
 
 ## Endpoints
 
