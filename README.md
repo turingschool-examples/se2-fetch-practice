@@ -7,9 +7,9 @@ This repo provides a backend server to practice with GET and POST requests.
 1. Clone down this repo
 1. `cd` into the cloned repo
 1. Run `npm install`
-1. Run `npm start` to start the backend server. The server should be running locally on `http://localhost:3001`.
-1. Navigate to the endpoint you're trying to request in the browser (for example, if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
-1. Practice making your network requests in the browser console using the available endpoints below!
+1. Run `npm start` to start the backend server. The server should be running locally on `http://localhost:3001`. (_Note:_ If you navigate to `http://localhost:3001/` in your browser, you will see a screen that says `Cannot GET /`, which is to be expected. Follow the next step to see more useful information.)
+1. Navigate to an endpoint you're trying to request in the browser (for example, if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser) - see the tables below for possible endpoints.
+1. Practice making your network requests in the _browser console_ using the available endpoints below!
 
 ## Endpoints
 
