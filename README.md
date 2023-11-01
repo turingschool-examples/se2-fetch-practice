@@ -6,7 +6,7 @@
 2. cd into the cloned repo
 3. Make sure that you're on the deployed branch
   * `git fetch`
-  * `git checkout deployed-branch`
+  * `git checkout error-handling`
 5. run `npm install`
 6. run `npm start`. The server should be running locally on port 3001
 7. Navigate to the endpoint you're trying to request in the browser (ie if you want to GET users, navigate to http://localhost:3001/api/v1/users in the browser)
