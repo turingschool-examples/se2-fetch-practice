@@ -1,11 +1,6 @@
-// This console log and other logs are visible in the browser console (dev tools) when 
-// you use "open client/index.html" from the terminal
 console.log('so fetch!')
 
 // GET Lesson:
-
-// There is an "Add Item!" button on the DOM that you'll see on the HTML page, but you will
-// not use this until the POST Lesson section
 
 // 1. Make a GET request on page load to get all of the users for a given resource, and log those items to the console.
 // 2. Make a GET request on page load  to get all of the sports items for a given resource, and log those items to the console.
