@@ -1,6 +1,6 @@
 console.log('so fetch!')
 
-// GET Lesson:
+// GET:
 
 // 1. Make a GET request on page load to get all of the users for a given resource, and log those items to the console.
 // 2. Make a GET request on page load  to get all of the sports items for a given resource, and log those items to the console.
@@ -10,14 +10,7 @@ console.log('so fetch!')
 // 4. 🌶 On page load, GET all users and populate the section (.js-collection) with that information. We should see a <p> element for each user that contains text about that user. For example, "Travis Rollins is online and enjoys music, software, and gaming."
 
 
-
-
-
-
-// STOP!
-// Don't do the next section until the POST lesson!
-
-// POST Lesson:
+// POST:
 // 1. Make a POST request to create a new instance of that resource, and log the result to the console.
 // 2. Rerun your previous GET fetch request to verify you added the new resource
 // 3. Add an event listener, so that when you click button.js-add-item (comment this back in the HTML file!), it will make a fetch request to POST that item to the server, AND update the page with the newly updated collection
