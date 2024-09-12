@@ -20,8 +20,6 @@ This repo provides a backend server to practice with GET and POST requests.
 
 ## Endpoints
 
-**Note:** The POST endpoints are for the POST lesson only. If you are currently in the GET lesson, ignore those!
-
 ### User Endpoints
 
 | url | verb | options | sample response |
