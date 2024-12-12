@@ -2,8 +2,8 @@ console.log('so fetch!')
 
 // GET:
 
-// 1. Make a GET request on page load to get all of the users for a given resource, and log those items to the console.
-// 2. Make a GET request on page load  to get all of the sports items for a given resource, and log those items to the console.
+// 1. Make a GET request on page load to get all of the users, and log those items to the console.
+// 2. Make a GET request on page load to get all of the sports teams, and log those items to the console.
 
 // Let's hook it up to the DOM!
 // 3. When the user clicks the "Log animals!" button, make a GET request to get all of the animals, and log them to the console.
